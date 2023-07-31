@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'reg11228cf5-auth'
 
   # Agent VM image name
-  vmImageName: 'ubuntu-latest'
+  vmImageName: 'test'
 
 
 stages:
@@ -29,7 +29,7 @@ stages:
   - job: Build
     displayName: Build
     pool:
-      vmImage: $(vmImageName)
+      name: $(vmImageName)
     steps:
     - task: Docker@2
       displayName: Build and push an image to container registry
