@@ -19,7 +19,7 @@ variables:
   imagePullSecret: 'reg11228cf5-auth'
 
   # Agent VM image name
-  vmImageName: 'test'
+  vmImageName: 'self'
 
 
 stages:
