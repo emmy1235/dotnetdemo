@@ -1,16 +1,16 @@
 apiVersion : apps/v1
 kind: Deployment
 metadata:
-  name: dotnetdemo 
+  name: saikiranrkodotnetdemo 
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dotnetdemo
+      app: saikiranrkodotnetdemo
   template:
     metadata:
       labels:
-        app: dotnetdemo 
+        app: saikiranrkodotnetdemo 
     spec:
       containers:
         - name: dotnetdemo
