@@ -86,7 +86,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'Prod'
+    environment: 'saikiranrkodotnetdemo-1480.newname'
     strategy:
       runOnce:
         deploy:
