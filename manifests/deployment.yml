@@ -13,7 +13,7 @@ spec:
         app: dotnetdemo 
     spec:
       containers:
-        - name: saikiranrkodotnetdemo
-          image: reg1122.azurecr.io/dotnetdemo
+        - name: dotnetdemo
+          image: reg1122.azurecr.io/saikiranrkodotnetdemo
           ports:
           - containerPort: 5000
