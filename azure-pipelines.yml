@@ -17,6 +17,7 @@ variables:
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'reg112213238f49-auth'
+  kubernetesServiceConnection:  'string'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
