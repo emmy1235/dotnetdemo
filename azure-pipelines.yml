@@ -17,7 +17,6 @@ variables:
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'reg112213238f49-auth'
-  kubernetesServiceConnection:  'string'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
@@ -103,6 +102,8 @@ stages:
             displayName: Deploy to Kubernetes cluster
             inputs:
               action: deploy
+              kubernetesServiceConnection:  'string'
+
               manifests: |
                 $(Pipeline.Workspace)/manifests/deployment.yml
                 $(Pipeline.Workspace)/manifests/service.yml
